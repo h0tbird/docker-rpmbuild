@@ -20,9 +20,3 @@ RUN yum install -y rpm-build rpm-sign git gcc make libffi-devel ruby-devel && \
     yum clean all
 
 RUN gem install --no-document --verbose fpm
-
-#------------------------------------------------------------------------------
-# Populate root file system:
-#------------------------------------------------------------------------------
-
-ADD rootfs /
